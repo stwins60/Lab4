@@ -1,0 +1,14 @@
+form label a {
+    width: 200px;
+    display: -webkit-inline-box;
+}
+
+form label a {
+    /* display: block; */
+    /* width: 200px; */
+}
+
+input {
+    border: 0;
+    border-bottom: 1px solid black;
+}

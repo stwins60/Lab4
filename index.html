@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <div class = "box">
+    <h1>Volunteer Form</h1>
+    <p>
+      <b>My Info</b>
+    </p>
+    <form action = "http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+      <label>First Name: <input type="text" name="first_name_field"></label><br/>
+      <label>Last Name: <input type="text" name="last_name_field"></label><br/>
+      <label>Phone Number: <input type="text" name="phone_field"></label><br/>
+      <label>Email Address: <input type="text" name="email_field"></label><br/>
+      <label>Gender: <input type="radio" name="gender_field">Male</label>
+      <input type="radio" name="gender_field">Female</label><br/>
+      <label name = "age_field">Age:
+        <select>
+          <option value="under 18">under 18</option>
+          <option value="18-24">18-24</option>
+          <option value="25-34">25-34</option>
+          <option value="35-44">35-44</option>
+          <option value="45-54">45-54</option>
+          <option value="55-64">55-64</option>
+          <option value="65 and over">65 and over</option>
+        </select>
+      </label><br/>
+    </div>
+    <div class = "box">
+      <p>
+        <b>My Availability</b>
+      </p>
+      <label>Days Availability:</br>
+      <input type="checkbox" name="available_field">Sunday</br>
+      <input type="checkbox" name="available_field">Monday</br>
+      <input type="checkbox" name="available_field">Tuesday</br>
+      <input type="checkbox" name="available_field">Wednesday</br>
+      <input type="checkbox" name="available_field">Thursday</br>
+      <input type="checkbox" name="available_field">Friday</br>
+      <input type="checkbox" name="available_field">Saturday</br></br>
+      </label>
+      <label>Any Comment:</br>
+        <textarea name="comments_field" name="txt_comments" rows="10" cols="35"></textarea></br></br>
+        <label><input type = "submit" name = "hidden_field" value="Send Me"></label>
+    </div>
+  </form>
+</body>
+</html>
