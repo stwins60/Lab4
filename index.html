@@ -2,23 +2,30 @@
 <html lang = "en">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>ITMD 361: Fundamentals of Web Development</title>
 </head>
 <body>
-  <div class = "box">
     <h1>Volunteer Form</h1>
     <p>
       <b>My Info</b>
     </p>
+	
     <form action = "http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
-      <label>First Name: <input type="text" name="first_name_field"></label><br/>
-      <label>Last Name: <input type="text" name="last_name_field"></label><br/>
-      <label>Phone Number: <input type="text" name="phone_field"></label><br/>
-      <label>Email Address: <input type="text" name="email_field"></label><br/>
-      <label>Gender: <input type="radio" name="gender_field">Male</label>
-      <input type="radio" name="gender_field">Female</label><br/>
-      <label name = "age_field">Age:
-        <select>
+	<div>
+      <label for= "first_name_field">First Name: </label><br>
+	  <input type="text" id="first_name_field">
+	 </div>
+      <label>Last Name: <input type="text" name="last_name_field"></label><br>
+      <label>Phone Number: <input type="text" name="phone_field"></label><br>
+      <label>Email Address: <input type="text" name="email_field"></label><br>
+	  <div>
+	  <label for = "gender_field">Gender:</label><br>
+	  <input type="radio" id="gender_field">Male
+      <input type="radio" id="gender_field1">Female
+	  </div>
+       
+      <label>Age:
+        <select name = "age_field">
           <option value="under 18">under 18</option>
           <option value="18-24">18-24</option>
           <option value="25-34">25-34</option>
@@ -28,24 +35,25 @@
           <option value="65 and over">65 and over</option>
         </select>
       </label><br/>
-    </div>
-    <div class = "box">
+	
       <p>
         <b>My Availability</b>
       </p>
-      <label>Days Availability:</br>
-      <input type="checkbox" name="available_field">Sunday</br>
-      <input type="checkbox" name="available_field">Monday</br>
-      <input type="checkbox" name="available_field">Tuesday</br>
-      <input type="checkbox" name="available_field">Wednesday</br>
-      <input type="checkbox" name="available_field">Thursday</br>
-      <input type="checkbox" name="available_field">Friday</br>
-      <input type="checkbox" name="available_field">Saturday</br></br>
-      </label>
-      <label>Any Comment:</br>
-        <textarea name="comments_field" name="txt_comments" rows="10" cols="35"></textarea></br></br>
-        <label><input type = "submit" name = "hidden_field" value="Send Me"></label>
-    </div>
+	  <div>
+	  <label for = "available_field">Days Availability:</label><br>
+      <input type="checkbox" id="available_field">Sunday<br>
+      <input type="checkbox" id="available_field2">Monday<br>
+      <input type="checkbox" id="available_field3">Tuesday<br>
+      <input type="checkbox" id="available_field4">Wednesday<br>
+      <input type="checkbox" id="available_field5">Thursday<br>
+      <input type="checkbox" id="available_field6">Friday<br>
+      <input type="checkbox" id="available_field7">Saturday<br><br>
+	  </div>
+      
+      
+      <label>Any Comment:</label><br>
+        <textarea name="comments_field" rows="10" cols="35"></textarea><br><br>
+        <input type = "submit" name = "hidden_field" value="Send Me">
   </form>
 </body>
 </html>
